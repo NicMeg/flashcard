@@ -1,4 +1,7 @@
 
+      user_input = TTY::Prompt.new
+
+
 def greeting
   puts 'Hello welocome to FlashcardApp'
   sleep 1

@@ -4,7 +4,6 @@ require_relative "menu"
 require_relative "views"
 require 'colorized_string'
 require 'colorize'
-require "tty-prompt"
 
 require 'pry'
 require 'csv'
@@ -13,12 +12,10 @@ require 'csv'
 
 
 def index 
-  # greeting
-  # this method populate_cards_array_from_csv returns an array
+  greeting
   cards = populate_cards_array_from_csv
-
   while true 
-    user_menu_option = menu
+    user_menu_option = menu_2
     case user_menu_option
     when 1
       while true
@@ -39,7 +36,7 @@ def index
         end
         
         print_all_cards(cards)
-        
+
         input = delete_card_number.to_i
 
         cards.delete_at(input - 1)
@@ -66,9 +63,6 @@ def index
       end
     when 4
       exit
-    when 5
-     prompt = TTY::Prompt.new
-      prompt.ask("Your question here")
     else
       puts "That is not an option"
     end
