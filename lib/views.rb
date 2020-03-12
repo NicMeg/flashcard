@@ -105,9 +105,12 @@ def user_answer(card)
   user_input = gets.chomp
   if user_input == card.answer
     puts "Good Job!"
-    puts "-" * 25
   else
     puts "Too bad."
     puts "The correct answer is #{card.answer}."
   end
+end
+
+def not_enough_cards
+  puts "There is not enough cards"
 end

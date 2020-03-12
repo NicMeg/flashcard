@@ -1,7 +1,6 @@
 require 'tty-prompt' 
 user_input = TTY::Prompt.new
 
-
 def menu
   sleep 1
   system "clear"
@@ -31,16 +30,12 @@ def menu_2
   puts "         Flashcard APP        ".on_red.bold
   puts "*" * 30
   puts "-" * 30
-      user_input = TTY::Prompt.new
-      user_input.select('Select') do |menu|
-        menu.choice '1. Add flashcards', 1
-        menu.choice '2. Remove flashcards', 2
-        menu.choice '3. Practice with flashcards', 3
 
-      end
+  user_input = TTY::Prompt.new
+  user_input.select('Select') do |menu|
+    menu.choice '1. Add flashcards', 1
+    menu.choice '2. Remove flashcards', 2
+    menu.choice '3. Practice with flashcards', 3
+    menu.choice '4. Exit', 4
+  end
 end
-
-# User profile to save questions
-# Score for successful
-
-

@@ -2,18 +2,17 @@ require_relative "flashcard/version"
 require_relative "Card"
 require_relative "menu"
 require_relative "views"
+
 require 'colorized_string'
 require 'colorize'
-
 require 'pry'
 require 'csv'
 
-
-
-
 def index 
+  csv_file = 'flashcards.csv'
+
   greeting
-  cards = populate_cards_array_from_csv
+  cards = populate_cards_array_from_csv(csv_file)
   while true 
     user_menu_option = menu_2
     case user_menu_option
@@ -24,7 +23,7 @@ def index
         card = Card.new(question, answer, (cards.length + 1))
         cards << card
 
-        save_card_to_csv(card)
+        save_card_to_csv(card, csv_file)
 
         break if handle_add_another_card_response
       end
@@ -40,29 +39,38 @@ def index
         input = delete_card_number.to_i
 
         cards.delete_at(input - 1)
-        rewrite_csv_after_delete(cards)
+        rewrite_csv_after_delete(cards, csv_file)
 
-        cards = populate_cards_array_from_csv
+        cards = populate_cards_array_from_csv(csv_file)
 
         delete_confirmation(input)
 
         break if handle_delete_another_card_response
       end
     when 3 
-      if cards.empty?
-          cards_unavailable
+      while true
+        if cards.empty?
+            cards_unavailable
+            next
+        end
+        selected_qty =  selected_card_quantity
+
+        if cards.length < selected_qty      
+          not_enough_cards
           next
-      end
-      selected_qty =  selected_card_quantity
+        end
 
-      if cards.length < selected_qty      ## I am not sure if this is required
-      puts "There is not enough cards"
-      next
-      end
+        sample_cards = cards.sample(selected_qty)
+        sample_cards.each do |card|
+          display_question(card)
+        end
 
-      sample_cards = cards.sample(selected_qty)
-      sample_cards.each do |card|
-        display_question(card)
+        puts 'would you like to practice again?[y/n]'
+        input = gets.chomp.downcase
+
+        if input == 'n'
+          break
+        end
       end
     when 4
       exit
@@ -72,8 +80,8 @@ def index
   end
 end 
 
-def populate_cards_array_from_csv
-  csv_text = File.read('flashcards.csv')
+def populate_cards_array_from_csv(csv_file)
+  csv_text = File.read(csv_file)
   csv = CSV.parse(csv_text, headers: true)
 
   csv.map.with_index do |row, index|
@@ -81,8 +89,8 @@ def populate_cards_array_from_csv
   end
 end
 
-def save_card_to_csv(card)
-  CSV.open("flashcards.csv", "a") do |csv|
+def save_card_to_csv(card, csv_file)
+  CSV.open(csv_file, "a") do |csv|
     csv << card.to_a
   end 
 end
@@ -115,13 +123,23 @@ def handle_delete_another_card_response
   end
 end
 
-def rewrite_csv_after_delete(cards)
-  CSV.open("flashcards.csv", "w", :write_headers=> true, :headers => ["question","answer", "ID"]) do |csv|
+def rewrite_csv_after_delete(cards, csv_file)
+  CSV.open(csv_file, "w", :write_headers=> true, :headers => ["question","answer", "ID"]) do |csv|
     cards.each do |card| 
       csv << card.to_a
     end 
   end
 end
+
+def set_up_csv
+  new_csv = "#{ARGV[0]}.csv"
+
+  CSV.open(new_csv, "wb") do |csv|
+    csv << ["question","answer", "ID"]
+  end
+
+  return new_csv
+end 
 
 index
 
