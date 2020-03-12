@@ -55,7 +55,10 @@ def index
       end
       selected_qty =  selected_card_quantity
 
-      # cards.length > input            ## I am not sure if this is required
+      if cards.length < selected_qty      ## I am not sure if this is required
+      puts "There is not enough cards"
+      next
+      end
 
       sample_cards = cards.sample(selected_qty)
       sample_cards.each do |card|
