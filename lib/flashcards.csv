@@ -1,0 +1,246 @@
+question,answer,ID
+Afghanistan,Kabul,1
+American Samoa,Pago Pago,3
+Andorra,Andorra la Vella,4
+Angola,Luanda,5
+Anguilla,The Valley,6
+Antigua and Barbuda,St. John's,7
+Argentina,Buenos Aires,8
+Armenia,Yerevan,9
+Aruba,Oranjestad,10
+Ascension Island,Georgetown,11
+Australia,Canberra,12
+Austria,Vienna,13
+Azerbaijan,Baku,14
+Bahamas,Nassau,15
+Bahrain,Manama,16
+Bangladesh,Dhaka,17
+Barbados,Bridgetown,18
+Belarus,Minsk,19
+Belgium,Brussels,20
+Belize,Belmopan,21
+Benin,Porto-Novo,22
+Bermuda,Hamilton,23
+Bhutan,Thimphu,24
+Bolivia,Sucre,25
+Bolivia,La Paz,26
+Bosnia and Herzegovina,Sarajevo,27
+Botswana,Gaborone,28
+Brazil,Brasília,29
+British Virgin Islands,Road Town,30
+Brunei,Bandar Seri Begawan,31
+Bulgaria,Sofia,32
+Burkina Faso,Ouagadougou,33
+Burundi,Bujumbura,34
+Cambodia,Phnom Penh,35
+Cameroon,Yaoundé,36
+Canada,Ottawa,37
+Cape Verde,Praia,38
+Cayman Islands,George Town,39
+Central African Republic,Bangui,40
+Chad,N'Djamena,41
+Chile,Santiago,42
+China,Beijing,43
+Christmas Island,Flying Fish Cove,44
+Cocos (Keeling) Islands,West Island,45
+Colombia,Bogotá,46
+Comoros,Moroni,47
+Cook Islands,Avarua,48
+Costa Rica,San José,49
+Croatia,Zagreb,50
+Cuba,Havana,51
+Curaçao,Willemstad,52
+Cyprus,Nicosia,53
+Czech Republic,Prague,54
+Côte d'Ivoire,Yamoussoukro,55
+Democratic Republic of the Congo,Kinshasa,56
+Denmark,Copenhagen,57
+Djibouti,Djibouti,58
+Dominica,Roseau,59
+Dominican Republic,Santo Domingo,60
+East Timor (Timor-Leste),Dili,61
+Easter Island,Hanga Roa,62
+Ecuador,Quito,63
+Egypt,Cairo,64
+El Salvador,San Salvador,65
+Equatorial Guinea,Malabo,66
+Eritrea,Asmara,67
+Estonia,Tallinn,68
+Ethiopia,Addis Ababa,69
+Falkland Islands,Stanley,70
+Faroe Islands,Tórshavn,71
+Federated States of Micronesia,Palikir,72
+Fiji,Suva,73
+Finland,Helsinki,74
+France,Paris,75
+French Guiana,Cayenne,76
+French Polynesia,Papeete,77
+Gabon,Libreville,78
+Gambia,Banjul,79
+Georgia,Tbilisi,80
+Germany,Berlin,81
+Ghana,Accra,82
+Gibraltar,Gibraltar,83
+Greece,Athens,84
+Greenland,Nuuk,85
+Grenada,St. George's,86
+Guam,Hagåtña,87
+Guatemala,Guatemala City,88
+Guernsey,St. Peter Port,89
+Guinea,Conakry,90
+Guinea-Bissau,Bissau,91
+Guyana,Georgetown,92
+Haiti,Port-au-Prince,93
+Honduras,Tegucigalpa,94
+Hungary,Budapest,95
+Iceland,Reykjavík,96
+India,New Delhi,97
+Indonesia,Jakarta,98
+Iran,Tehran,99
+Iraq,Baghdad,100
+Ireland,Dublin,101
+Isle of Man,Douglas,102
+Israel,Jerusalem,103
+Italy,Rome,104
+Jamaica,Kingston,105
+Japan,Tokyo,106
+Jersey,St. Helier,107
+Jordan,Amman,108
+Kazakhstan,Astana,109
+Kenya,Nairobi,110
+Kiribati,Tarawa,111
+Kosovo,Pristina,112
+Kuwait,Kuwait City,113
+Kyrgyzstan,Bishkek,114
+Laos,Vientiane,115
+Latvia,Riga,116
+Lebanon,Beirut,117
+Lesotho,Maseru,118
+Liberia,Monrovia,119
+Libya,Tripoli,120
+Liechtenstein,Vaduz,121
+Lithuania,Vilnius,122
+Luxembourg,Luxembourg,123
+Macedonia,Skopje,124
+Madagascar,Antananarivo,125
+Malawi,Lilongwe,126
+Malaysia,Kuala Lumpur,127
+Maldives,Malé,128
+Mali,Bamako,129
+Malta,Valletta,130
+Marshall Islands,Majuro,131
+Mauritania,Nouakchott,132
+Mauritius,Port Louis,133
+Mexico,Mexico City,134
+Moldova,Chisinau,135
+Monaco,Monaco,136
+Mongolia,Ulaanbaatar,137
+Montenegro,Podgorica,138
+Montserrat,Plymouth,139
+Morocco,Rabat,140
+Mozambique,Maputo,141
+Myanmar,Naypyidaw,142
+Nagorno-Karabakh Republic,Stepanakert,143
+Namibia,Windhoek,144
+Nauru,Yaren,145
+Nepal,Kathmandu,146
+Netherlands,Amsterdam,147
+New Caledonia,Nouméa,148
+New Zealand,Wellington,149
+Nicaragua,Managua,150
+Niger,Niamey,151
+Nigeria,Abuja,152
+Niue,Alofi,153
+Norfolk Island,Kingston,154
+North Korea,Pyongyang,155
+Northern Cyprus,Nicosia,156
+United Kingdom Northern Ireland,Belfast,157
+Northern Mariana Islands,Saipan,158
+Norway,Oslo,159
+Oman,Muscat,160
+Pakistan,Islamabad,161
+Palau,Ngerulmud,162
+Palestine,Jerusalem,163
+Panama,Panama City,164
+Papua New Guinea,Port Moresby,165
+Paraguay,Asunción,166
+Peru,Lima,167
+Philippines,Manila,168
+Pitcairn Islands,Adamstown,169
+Poland,Warsaw,170
+Portugal,Lisbon,171
+Puerto Rico,San Juan,172
+Qatar,Doha,173
+Republic of China (Taiwan),Taipei,174
+Republic of the Congo,Brazzaville,175
+Romania,Bucharest,176
+Russia,Moscow,177
+Rwanda,Kigali,178
+Saint Barthélemy,Gustavia,179
+Saint Helena,Jamestown,180
+Saint Kitts and Nevis,Basseterre,181
+Saint Lucia,Castries,182
+Saint Martin,Marigot,183
+Saint Pierre and Miquelon,St. Pierre,184
+Saint Vincent and the Grenadines,Kingstown,185
+Samoa,Apia,186
+San Marino,San Marino,187
+Saudi Arabia,Riyadh,188
+Scotland,Edinburgh,189
+Senegal,Dakar,190
+Serbia,Belgrade,191
+Seychelles,Victoria,192
+Sierra Leone,Freetown,193
+Singapore,Singapore,194
+Sint Maarten,Philipsburg,195
+Slovakia,Bratislava,196
+Slovenia,Ljubljana,197
+Solomon Islands,Honiara,198
+Somalia,Mogadishu,199
+Somaliland,Hargeisa,200
+South Africa,Pretoria,201
+South Georgia and the South Sandwich Islands,Grytviken,202
+South Korea,Seoul,203
+South Ossetia,Tskhinvali,204
+South Sudan South Sudan,Juba,205
+Spain,Madrid,206
+Sri Lanka,Sri Jayawardenapura Kotte,207
+Sudan,Khartoum,208
+Suriname,Paramaribo,209
+Swaziland,Mbabane,210
+Sweden,Stockholm,211
+Switzerland,Bern,212
+Syria,Damascus,213
+São Tomé and Príncipe,São Tomé,214
+Tajikistan,Dushanbe,215
+Tanzania,Dodoma,216
+Thailand,Bangkok,217
+Togo,Lomé,218
+Tonga,Nukuʻalofa,219
+Trinidad and Tobago,Port of Spain,220
+Tristan da Cunha,Edinburgh of the Seven Seas,221
+Tunisia,Tunis,222
+Turkey,Ankara,223
+Turkmenistan,Ashgabat,224
+Turks and Caicos Islands,Cockburn Town,225
+Tuvalu,Funafuti,226
+Uganda,Kampala,227
+Ukraine,Kiev,228
+United Arab Emirates,Abu Dhabi,229
+United Kingdom; England,London,230
+United States,"Washington, D.C.",231
+United States Virgin Islands,Charlotte Amalie,232
+Uruguay,Montevideo,233
+Uzbekistan,Tashkent,234
+Vanuatu,Port Vila,235
+Vatican City,Vatican City,236
+Venezuela,Caracas,237
+Vietnam,Hanoi,238
+Wales,Cardiff,239
+Wallis and Futuna,Mata-Utu,240
+Western Sahara,El Aaiún,241
+Zambia,Lusaka,242
+Whats the Capital of Iceland,Rekjavik,243
+Whats the Capital of Australia?,Caberra,244
+Whats her name?,man suet,245
+"","",245
